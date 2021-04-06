@@ -21,6 +21,7 @@ const Resume = () => (
             className="profile-image"
             src="../images/profile.png"
             alt="Profile"
+            placeholder="blurred"
           />
         </div>
         <div className="ml-5">

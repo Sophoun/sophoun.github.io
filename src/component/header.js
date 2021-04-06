@@ -12,6 +12,7 @@ const Header = ({ data }) => (
                     src="../images/Logo@2x.png"
                     className="flex-start"
                     alt="Logo"
+                    placeholder="blurred"
                 />
             </Link>
             <div className="align-content-end">

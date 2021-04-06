@@ -20,6 +20,7 @@ const IndexPage = () => {
               width={600}
               src="../images/banner1@2x.png"
               alt="Banner 1"
+              placeholder="blurred"
             />
           </div>
         </div>
@@ -32,6 +33,7 @@ const IndexPage = () => {
               width={600}
               src="../images/banner2@2x.png"
               alt="Banner 2"
+              placeholder="blurred"
             />
           </div>
           <div className="col-6">
