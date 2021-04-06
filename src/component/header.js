@@ -16,8 +16,8 @@ const Header = ({ data }) => (
             </Link>
             <div className="align-content-end">
                 <a href="/" className="button btn">Home</a>
-                <a href="#2" className="button btn ml-2">Hire Me</a>
-                <a href="#2" className="button btn ml-2">Resume</a>
+                {/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
+                <a href="/resume" className="button btn ml-2">Resume</a>
             </div>
         </div>
     </div>
