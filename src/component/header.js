@@ -7,7 +7,7 @@ const Header = ({ data }) => (
     <div className="col-12">
         <Helmet title={`Sophoun - ${data?.frontmatter?.title ?? "Blog"}`} />
         <div className="row d-flex justify-content-between">
-            <Link href="#0">
+            <Link href="/">
                 <StaticImage
                     src="../images/Logo@2x.png"
                     className="flex-start"
@@ -15,7 +15,8 @@ const Header = ({ data }) => (
                 />
             </Link>
             <div className="align-content-end">
-                <a href="#1" className="button btn">Home</a>
+                <a href="/" className="button btn">Home</a>
+                <a href="#2" className="button btn ml-2">Hire Me</a>
                 <a href="#2" className="button btn ml-2">Resume</a>
             </div>
         </div>

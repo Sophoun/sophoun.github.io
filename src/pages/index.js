@@ -11,6 +11,9 @@ const IndexPage = () => {
             <p className="paragraph1">Hello</p>
             <p className="hello-bold">I'm Sophoun</p>
             <p className="paragraph2">Freelancer mobile &amp; web developer</p>
+            <div className="d-flex justify-content-end">
+              <a href="#" className="button btn flex-end">Hire Me</a>
+            </div>
           </div>
           <div className="col-6">
             <StaticImage
@@ -36,6 +39,7 @@ const IndexPage = () => {
             <hr className="break-line" />
             <p className="paragraph3">I'm a software developer specialized in mobile development for complex scalable apps and also confident in backend development. I have more than  6 years experience building software for company around the world and I also write about software development on my blog.</p>
             <p className="paragraph3">Want to know how I may help your project? check out below.</p>
+            <a href="#" className="button btn flex-end">Resume</a>
           </div>
         </div>
       </div>
