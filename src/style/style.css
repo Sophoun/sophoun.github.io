@@ -1,3 +1,22 @@
 body {
     background-color: antiquewhite;
+    font-family: 'Shanti';
+}
+
+.page {
+    width: 1200px;
+}
+
+.button {
+    background-color: transparent;
+    color: #FFAF3A;
+    border-color: #FFAF3A;
+    border-radius: 0%;
+    border-width: 1.5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #FFAF3A;
+    color: white;
 }

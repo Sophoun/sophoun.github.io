@@ -45,5 +45,8 @@ module.exports = {
         excludePattern: /(excluded-link|external)/,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+    },
   ],
 };
