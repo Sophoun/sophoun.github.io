@@ -8,7 +8,6 @@ const Layout = ({ children }) => (
             <div className="row">
                 <Header />
                 <div className="col-12">
-                    <h1>Layout</h1>
                     {children}
                 </div>
                 <Footer />

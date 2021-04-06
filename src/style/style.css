@@ -1,6 +1,9 @@
 body {
     background-color: antiquewhite;
     font-family: 'Shanti';
+    color: #36313D;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .page {
@@ -19,4 +22,33 @@ body {
 .button:hover {
     background-color: #FFAF3A;
     color: white;
+}
+
+.content-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.paragraph1 {
+    font-size: 3em;
+}
+
+.paragraph2 {
+    font-size: 2.3em;
+}
+
+.paragraph3 {
+    font-size: 1.6em;
+}
+
+.hello-bold {
+    font-size: 5em;
+    font-weight: bold;
+    color: #FFAF3A;
+}
+
+.break-line {
+    background-color: #FFAF3A;
+    width: 200px;
+    margin-left: 0px;
 }
