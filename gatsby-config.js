@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "sophoun.github.io",
+    title: `Sophoun - Blog`,
+    author: `Sophoun`
   },
   plugins: [
     "gatsby-plugin-image",
@@ -37,6 +38,12 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
+      },
     },
   ],
 };
