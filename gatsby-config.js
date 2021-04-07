@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Sophoun - Blog`,
     author: `Sophoun`,
-    siteUrl: `https://sophoun.github.io`
+    siteUrl: `https://www.sophoun.com`
   },
   plugins: [
     "gatsby-plugin-image",
@@ -49,5 +49,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
     },
+    'gatsby-plugin-cname'
   ],
 };
