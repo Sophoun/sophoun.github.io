@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Sophoun - Blog`,
     author: `Sophoun`,
-    siteUrl: `https://www.sophoun.com`
+    siteUrl: `https://sophoun.com`
   },
   plugins: [
     "gatsby-plugin-image",
