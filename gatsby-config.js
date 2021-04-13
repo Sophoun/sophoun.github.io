@@ -6,14 +6,33 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "1:216627285135:web:3c40c33c7a6c846c83f4fa",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        features: {
+          auth: false,
+          database: false,
+          firestore: false,
+          storage: false,
+          messaging: false,
+          functions: false,
+          performance: false,
+          analytics: true
+        },
+        credentials: {
+          apiKey: "AIzaSyCw0FGy40wXkWimd1QA5aYVA31ydqHw5Ps",
+          authDomain: "easyteam-bdef0.firebaseapp.com",
+          databaseURL: "https://easyteam-bdef0.firebaseio.com",
+          projectId: "easyteam-bdef0",
+          storageBucket: "easyteam-bdef0.appspot.com",
+          messagingSenderId: "216627285135",
+          appId: "1:216627285135:web:3c40c33c7a6c846c83f4fa",
+          measurementId: "G-EMWXNCJ7KG"
+        }
+      }
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
