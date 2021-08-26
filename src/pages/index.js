@@ -10,7 +10,7 @@ const IndexPage = () => {
           <div className="col-6">
             <p className="paragraph1">Hello</p>
             <p className="hello-bold">I'm Sophoun</p>
-            <p className="paragraph2">Freelancer mobile &amp; web developer</p>
+            <p className="paragraph2">Professional mobile &amp; backend developer</p>
             {/* <div className="d-flex justify-content-end">
               <a href="#" className="button btn flex-end">Hire Me</a>
             </div> */}

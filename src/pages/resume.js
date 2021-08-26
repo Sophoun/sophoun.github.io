@@ -26,7 +26,7 @@ const Resume = () => (
         </div>
         <div className="ml-5">
           <h1 className="content-title">Sophoun NHEUM</h1>
-          <p className="paragraph3">Mobile and Web developer with 6 years experience that already solve many problems for customers over the world.</p>
+          <p className="paragraph3">Professional mobile and backend developer with 7 years experience that already solve many problems for customers over the world.</p>
         </div>
       </div>
     </div>
