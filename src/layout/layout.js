@@ -1,5 +1,4 @@
-import * as React from 'react'
-import Footer from '../component/footer'
+import React from 'react'
 import Header from '../component/header'
 
 const Layout = ({ children }) => (
@@ -10,7 +9,6 @@ const Layout = ({ children }) => (
                 <div className="col-12">
                     {children}
                 </div>
-                <Footer />
             </div>
         </div>
     </main>

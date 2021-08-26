@@ -1,27 +1,37 @@
-import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
-import * as React from 'react'
-import { Helmet } from "react-helmet"
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import * as React from "react";
+import { Helmet } from "react-helmet";
+
+const menuStyle = {
+	paddingTop: "24px",
+};
 
 const Header = ({ data }) => (
-    <div className="col-12">
-        <Helmet title={`Sophoun - ${data?.frontmatter?.title ?? "Blog"}`} />
-        <div className="row d-flex justify-content-between">
-            <Link href="/">
-                <StaticImage
-                    src="../images/Logo@2x.png"
-                    className="flex-start"
-                    alt="Logo"
-                    placeholder="blurred"
-                />
-            </Link>
-            <div className="align-content-end">
-                <a href="/" className="button btn">Home</a>
-                {/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
-                <a href="/resume" className="button btn ml-2">Resume</a>
-            </div>
-        </div>
-    </div>
-)
+	<div className="vw-100 row">
+		<div id="menu" style={menuStyle} className="col-12">
+			<Helmet title={`Sophoun - ${data?.frontmatter?.title ?? "Blog"}`} />
+			<div className="row d-flex justify-content-between">
+				<Link href="/">
+					<StaticImage
+						src="../images/Logo@2x.png"
+						className="flex-start"
+						alt="Logo"
+						placeholder="blurred"
+					/>
+				</Link>
+				<div className="align-content-end">
+					<a href="/" className="button btn">
+						Home
+					</a>
+					{/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
+					<a href="/resume" className="button btn ml-2">
+						Resume
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+);
 
-export default Header
+export default Header;

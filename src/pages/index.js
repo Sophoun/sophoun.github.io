@@ -1,52 +1,22 @@
-import { StaticImage } from "gatsby-plugin-image"
-import * as React from "react"
-import Layout from "../layout/layout"
+import React from "react";
+import Welcome from "../component/welcome";
+import Header from "../component/header";
+import Footer from "../component/footer";
 
 const IndexPage = () => {
-  return (
-    <Layout>
-      <div style={{ marginTop: '200px' }} className="row">
-        <div className="w-100 d-flex justify-content-between">
-          <div className="col-6">
-            <p className="paragraph1">Hello</p>
-            <p className="hello-bold">I'm Sophoun</p>
-            <p className="paragraph2">Professional mobile &amp; backend developer</p>
-            {/* <div className="d-flex justify-content-end">
-              <a href="#" className="button btn flex-end">Hire Me</a>
-            </div> */}
-          </div>
-          <div className="col-6">
-            <StaticImage
-              width={600}
-              src="../images/banner1@2x.png"
-              alt="Banner 1"
-              placeholder="blurred"
-            />
-          </div>
-        </div>
-      </div>
+	return (
+		<div className="container">
+			<div className="vh-100 d-flex row">
+				<Header />
+				<div className="align-self-start">
+					<Welcome />
+				</div>
+				<div className="col-12 align-self-end">
+					<Footer />
+				</div>
+			</div>
+		</div>
+	);
+};
 
-      <div style={{ marginTop: '200px', marginBottom: '200px' }} className="row">
-        <div className="w-100 d-flex justify-content-between">
-          <div className="col-6">
-            <StaticImage
-              width={600}
-              src="../images/banner2@2x.png"
-              alt="Banner 2"
-              placeholder="blurred"
-            />
-          </div>
-          <div className="col-6">
-            <p className="content-title">About Me</p>
-            <hr className="break-line" />
-            <p className="paragraph3">I'm a software developer specialized in mobile development for complex scalable apps and also confident in backend development. I have more than  6 years experience building software for company around the world and I also write about software development on my blog.</p>
-            <p className="paragraph3">Want to know how I may help your project? check out below.</p>
-            <a href="/resume" className="button btn flex-end">Resume</a>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  )
-}
-
-export default IndexPage
+export default IndexPage;
