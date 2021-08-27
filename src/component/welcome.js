@@ -12,10 +12,10 @@ const Welcome = () => {
 						Professional mobile &amp; backend developer
 					</p>
 					<div className="d-flex justify-content-start">
-						<a className="button btn" target='_blank' href='https://github.com/Sophoun'>
+						<a className="button btn" target='_blank' rel="noreferrer" alt='Github' href='https://github.com/Sophoun'>
 							<img src="https://img.icons8.com/ios-filled/24/000000/github.png" />
 						</a>
-						<a className="button btn ml-2" target='_blank' href='https://www.linkedin.com/in/sophoun-nheum'>
+						<a className="button btn ml-2" target='_blank' rel="noreferrer" alt='LinkedIn' href='https://www.linkedin.com/in/sophoun-nheum'>
 							<img src="https://img.icons8.com/fluency/24/000000/linkedin.png" />
 						</a>
 						<a className="button btn ml-2" href="mailto:sophoun.unix@gmail.com">

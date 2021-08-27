@@ -8,7 +8,7 @@ const menuStyle = {
 };
 
 const Header = ({ data }) => (
-	<div className="vw-100 row">
+	<div className="vw-100">
 		<div id="menu" style={menuStyle} className="col-12">
 			<Helmet title={`Sophoun - ${data?.frontmatter?.title ?? "Blog"}`} />
 			<div className="row d-flex justify-content-between">
