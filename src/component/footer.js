@@ -1,22 +1,26 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+	const { t } = useTranslation();
 
-    return(
-	<div>
-		<div className="row">
-			<h4>Contact</h4>
-		</div>
-		<div className="row">
-			<hr className="break-line" />
-		</div>
-		<div className="row d-flex justify-content-between">
-			<p>Email: sophoun.unix@gmail.com</p>
+	return (
+		<div>
+			<div className="row">
+				<h4>{t("footer.contact")}</h4>
+			</div>
+			<div className="row">
+				<hr className="break-line" />
+			</div>
+			<div className="row d-flex justify-content-between">
+				<p>
+					{t("footer.email")}: {t("footer.email_name")}
+				</p>
 
-			<p>Copyright: sophoun@2021</p>
+				<p>{t("footer.copy_right")}</p>
+			</div>
 		</div>
-	</div>
-);
-}
+	);
+};
 
 export default Footer;

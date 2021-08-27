@@ -4,6 +4,7 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 
 const IndexPage = () => {
+
 	return (
 		<div className="container">
 			<div className="vh-100 d-flex row">

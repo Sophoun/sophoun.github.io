@@ -1,25 +1,44 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
+	const { t } = useTranslation();
+
 	return (
 		<div className="row">
 			<div className="d-flex">
 				<div className="col-6">
-					<p className="paragraph1">Hello</p>
-					<p className="hello-bold">I'm Sophoun</p>
-					<p className="paragraph2">
-						Professional mobile &amp; backend developer
-					</p>
+					<p className="paragraph1">{t("home.hello")}</p>
+					<p className="hello-bold">{t("home.im_sophoun")}</p>
+					<p className="paragraph2">{t("home.me_info")}</p>
 					<div className="d-flex justify-content-start">
-						<a className="button btn" target='_blank' rel="noreferrer" alt='Github' href='https://github.com/Sophoun'>
-							<img src="https://img.icons8.com/ios-filled/24/000000/github.png" />
+						<a
+							className="button btn"
+							target="_blank"
+							rel="noreferrer"
+							alt="Github"
+							href="https://github.com/Sophoun"
+						>
+							<img
+								alt="Github"
+								src="https://img.icons8.com/ios-filled/24/000000/github.png"
+							/>
 						</a>
-						<a className="button btn ml-2" target='_blank' rel="noreferrer" alt='LinkedIn' href='https://www.linkedin.com/in/sophoun-nheum'>
-							<img src="https://img.icons8.com/fluency/24/000000/linkedin.png" />
+						<a
+							className="button btn ml-2"
+							target="_blank"
+							rel="noreferrer"
+							alt="LinkedIn"
+							href="https://www.linkedin.com/in/sophoun-nheum"
+						>
+							<img
+								alt="LinkedIn"
+								src="https://img.icons8.com/fluency/24/000000/linkedin.png"
+							/>
 						</a>
 						<a className="button btn ml-2" href="mailto:sophoun.unix@gmail.com">
-							Hire Me
+							{t("home.hire_me")}
 						</a>
 					</div>
 				</div>
