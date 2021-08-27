@@ -3,6 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import cookie from "react-cookies";
+import { utils } from "../utils/utils";
 
 const menuStyle = {
 	paddingTop: "24px",
@@ -20,7 +21,8 @@ const Header = ({ data }) => {
 		} else if (language === "km") {
 			i18n.changeLanguage("en");
 		}
-		cookie.save("language", i18n.language);
+		cookie.save("language", i18n.language, { path: "/" });
+		utils.changeBodyFont(lang);
 	};
 
 	const languageMenu = () => {
@@ -58,7 +60,7 @@ const Header = ({ data }) => {
 		<div className="vw-100">
 			<div id="menu" style={menuStyle} className="col-12">
 				<Helmet title={`Sophoun - ${data?.frontmatter?.title ?? "Blog"}`} />
-				<div className="row d-flex justify-content-between">
+				<div className="d-flex justify-content-between">
 					<a href="/">
 						<StaticImage
 							src="../images/Logo@2x.png"

@@ -3,6 +3,7 @@ import { initReactI18next } from "react-i18next";
 import english from "./locals/en.json";
 import khmer from "./locals/km.json";
 import cookie from "react-cookies";
+import { utils } from "./utils/utils";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -16,11 +17,14 @@ const resources = {
 	},
 };
 
+const lang = cookie.load("language");
+utils.changeBodyFont(lang);
+
 i18n
 	.use(initReactI18next) // passes i18n down to react-i18next
 	.init({
 		resources,
-		lng: cookie.load("language"),
+		lng: lang,
 		fallbackLng: "en",
 		interpolation: {
 			escapeValue: false, // react already safes from xss
