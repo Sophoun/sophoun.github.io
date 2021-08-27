@@ -1,4 +1,8 @@
 {
+	"language": {
+		"english": "English",
+		"khmer": "Khmer"
+	},
 	"menu": {
 		"home": "Home",
 		"resume": "Resume"

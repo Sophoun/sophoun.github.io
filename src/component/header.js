@@ -11,8 +11,9 @@ const menuStyle = {
 const Header = ({ data }) => {
 	const { t, i18n } = useTranslation();
 
-	const changeLanguage = () => {
+	const changeLanguage = (lang) => {
 		var language = cookie.load("language") ?? "en";
+		if (lang === language) return;
 		console.log(language);
 		if (language === "en") {
 			i18n.changeLanguage("km");
@@ -20,6 +21,37 @@ const Header = ({ data }) => {
 			i18n.changeLanguage("en");
 		}
 		cookie.save("language", i18n.language);
+	};
+
+	const languageMenu = () => {
+		var language = cookie.load("language") ?? "en";
+		if (language === "en") {
+			return (
+				<div className="d-flex align-content-center">
+					<StaticImage
+						alt={language}
+						src="../images/icons/united-kingdom.png"
+						style={{
+							marginRight: "6px",
+						}}
+					/>
+					{t("language.english")}
+				</div>
+			);
+		} else if (language === "km") {
+			return (
+				<div className="d-flex align-content-center">
+					<StaticImage
+						alt={language}
+						src="../images/icons/cambodia.png"
+						style={{
+							marginRight: "6px",
+						}}
+					/>
+					{t("language.khmer")}
+				</div>
+			);
+		}
 	};
 
 	return (
@@ -35,10 +67,52 @@ const Header = ({ data }) => {
 							placeholder="blurred"
 						/>
 					</a>
-					<div className="align-content-end">
-						<button className="button btn" onClick={changeLanguage}>
-							Khmer
-						</button>
+					<div className="row">
+						<div className="dropdown pr-2">
+							<button
+								className="btn button dropdown-toggle d-flex align-content-center"
+								type="button"
+								id="dropdownMenuButton"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								{languageMenu()}
+							</button>
+							<div
+								className="dropdown-menu"
+								aria-labelledby="dropdownMenuButton"
+							>
+								<button
+									className="dropdown-item button d-flex align-content-center"
+									href="#"
+									onClick={() => changeLanguage("en")}
+								>
+									<StaticImage
+										alt="english"
+										src="../images/icons/united-kingdom.png"
+										style={{
+											marginRight: "6px",
+										}}
+									/>
+									{t("language.english")}
+								</button>
+								<button
+									className="dropdown-item button d-flex align-content-center"
+									href="#"
+									onClick={() => changeLanguage("km")}
+								>
+									<StaticImage
+										alt="khmer"
+										src="../images/icons/cambodia.png"
+										style={{
+											marginRight: "6px",
+										}}
+									/>
+									{t("language.khmer")}
+								</button>
+							</div>
+						</div>
 						<a href="/" className="button btn">
 							{t("menu.home")}
 						</a>
