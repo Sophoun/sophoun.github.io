@@ -69,5 +69,13 @@ module.exports = {
 			resolve: "gatsby-plugin-web-font-loader",
 		},
 		"gatsby-plugin-cname",
+		{
+			resolve: `gatsby-plugin-typescript`,
+			options: {
+				isTSX: true,
+				jsxPragma: `jsx`,
+				allExtensions: true,
+			},
+		},
 	],
 };

@@ -20,7 +20,7 @@ const Resume = () => {
 				</div>
 				<div className>
 					<a
-						href="file/SophounNheum-CV.pdf"
+						href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
 						target="blank"
 						className="button btn"
 					>
