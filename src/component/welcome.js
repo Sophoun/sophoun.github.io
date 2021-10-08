@@ -44,7 +44,7 @@ const Welcome = () => {
 				</div>
 				<div className="col-6 d-flex justify-content-end">
 					<StaticImage
-						src="../images/banner1@2x.png"
+						src="../images/banner1-1.jpeg"
 						alt="Banner 1"
 						placeholder="blurred"
 					/>
