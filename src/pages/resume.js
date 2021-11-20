@@ -33,7 +33,7 @@ const Resume = () => {
 					<div>
 						<StaticImage
 							className="profile-image"
-							src="../images/profile.png"
+							src="../images/profile_circle.jpg"
 							alt="Profile"
 							placeholder="blurred"
 						/>
