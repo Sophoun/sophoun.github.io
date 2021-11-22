@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Shanti");
 @import url("https://fonts.googleapis.com/css?family=Khmer");
 
+.home-background {
+	background-image: url("../images/site_background.jpg");
+	  /* Full height */
+	  height: 100%;
+
+	  /* Center and scale the image nicely */
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;;
+}
+
 body {
 	background-color: white;
 	font-family: "Shanti";
@@ -70,3 +81,4 @@ body {
 .entry .title::before {
 	right: -5px !important;
 }
+

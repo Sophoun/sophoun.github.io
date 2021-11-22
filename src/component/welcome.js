@@ -8,7 +8,7 @@ const Welcome = () => {
 	return (
 		<div className="row">
 			<div className="d-flex">
-				<div className="col-6">
+				<div className="col-12">
 					<p className="paragraph1">{t("home.hello")}</p>
 					<p className="hello-bold">{t("home.im_sophoun")}</p>
 					<p className="paragraph2">{t("home.me_info")}</p>
@@ -42,13 +42,13 @@ const Welcome = () => {
 						</a>
 					</div>
 				</div>
-				<div className="col-6 d-flex justify-content-end">
+				{/* <div className="col-6 d-flex justify-content-end">
 					<StaticImage
-						src="../images/banner1-1.jpeg"
+						src="../images/site_background1.jpg"
 						alt="Banner 1"
 						placeholder="blurred"
 					/>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
