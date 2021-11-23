@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
@@ -17,7 +16,6 @@ const Welcome = () => {
 							className="button btn"
 							target="_blank"
 							rel="noreferrer"
-							alt="Github"
 							href="https://github.com/Sophoun"
 						>
 							<img
@@ -26,10 +24,9 @@ const Welcome = () => {
 							/>
 						</a>
 						<a
-							className="button btn ml-2"
+							className="button btn ms-2"
 							target="_blank"
 							rel="noreferrer"
-							alt="LinkedIn"
 							href="https://www.linkedin.com/in/sophoun-nheum"
 						>
 							<img
@@ -37,18 +34,11 @@ const Welcome = () => {
 								src="https://img.icons8.com/fluency/24/000000/linkedin.png"
 							/>
 						</a>
-						<a className="button btn ml-2" href="mailto:sophoun.unix@gmail.com">
+						<a className="button btn ms-2" href="mailto:sophoun.unix@gmail.com">
 							{t("home.hire_me")}
 						</a>
 					</div>
 				</div>
-				{/* <div className="col-6 d-flex justify-content-end">
-					<StaticImage
-						src="../images/site_background1.jpg"
-						alt="Banner 1"
-						placeholder="blurred"
-					/>
-				</div> */}
 			</div>
 		</div>
 	);

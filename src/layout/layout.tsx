@@ -4,10 +4,8 @@ import Header from "../component/header";
 const Layout = ({ children }) => (
 	<main>
 		<div className="container">
-			<div className="row">
-				<Header />
-				<div>{children}</div>
-			</div>
+			<Header data={undefined} />
+			<div>{children}</div>
 		</div>
 	</main>
 );

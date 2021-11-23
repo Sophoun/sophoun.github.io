@@ -12,21 +12,17 @@ const Resume = () => {
 		<Layout>
 			<div
 				style={{ marginTop: "50px" }}
-				className="d-flex justify-content-between"
-			>
+				className="d-flex justify-content-between">
 				<div>
 					<h1 className="content-title">{t("resume.title")}</h1>
 					<hr className="break-line" />
 				</div>
-				<div className>
-					<a
-						href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
-						target="blank"
-						className="button btn"
-					>
-						{t("resume.download")}
-					</a>
-				</div>
+				<a
+					href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
+					target="blank"
+					className="button btn me-0">
+					{t("resume.download")}
+				</a>
 			</div>
 			<div style={{ marginTop: "50px" }}>
 				<div className="d-flex justify-content-center">
@@ -38,7 +34,7 @@ const Resume = () => {
 							placeholder="blurred"
 						/>
 					</div>
-					<div className="ml-5">
+					<div className="ms-5">
 						<h1 className="content-title">{t("resume.name")}</h1>
 						<p className="paragraph3">{t("resume.slang")}</p>
 					</div>
@@ -58,8 +54,7 @@ const Resume = () => {
 					<TimelineItem
 						key="001"
 						dateText={t("resume.experiences.prince_bank.year")}
-						style={{ color: "#e86971" }}
-					>
+						style={{ color: "#e86971" }}>
 						<h3 style={{ color: "#e86971" }}>
 							{t("resume.experiences.prince_bank.title")}
 						</h3>
@@ -72,8 +67,7 @@ const Resume = () => {
 					<TimelineItem
 						key="002"
 						dateText={t("resume.experiences.beniten.year")}
-						dateInnerStyle={{ background: "#61b8ff", color: "#fff" }}
-					>
+						dateInnerStyle={{ background: "#61b8ff", color: "#fff" }}>
 						<h3 style={{ color: "#61b8ff" }}>
 							{t("resume.experiences.beniten.title")}
 						</h3>
@@ -87,8 +81,7 @@ const Resume = () => {
 					<TimelineItem
 						key="004"
 						dateText={t("resume.experiences.cam_wp.year")}
-						dateInnerStyle={{ background: "#76bb7f" }}
-					>
+						dateInnerStyle={{ background: "#76bb7f" }}>
 						<h3 style={{ color: "#76bb7f" }}>
 							{t("resume.experiences.cam_wp.title")}
 						</h3>
@@ -102,8 +95,7 @@ const Resume = () => {
 					<TimelineItem
 						key="005"
 						dateText={t("resume.experiences.blue.year")}
-						dateInnerStyle={{ background: "#bb007f" }}
-					>
+						dateInnerStyle={{ background: "#bb007f" }}>
 						<h3 style={{ color: "#bb007f" }}>
 							{t("resume.experiences.blue.title")}
 						</h3>
@@ -125,8 +117,7 @@ const Resume = () => {
 					<TimelineItem
 						key="001"
 						dateText={t("resume.educations.rupp.year")}
-						style={{ color: "#e86971" }}
-					>
+						style={{ color: "#e86971" }}>
 						<h3 style={{ color: "#e86971" }}>
 							{t("resume.educations.rupp.school")}
 						</h3>
@@ -135,8 +126,7 @@ const Resume = () => {
 					<TimelineItem
 						key="002"
 						dateText={t("resume.educations.ckcc.year")}
-						dateInnerStyle={{ background: "#61b8ff", color: "#fff" }}
-					>
+						dateInnerStyle={{ background: "#61b8ff", color: "#fff" }}>
 						<h3 style={{ color: "#61b8ff" }}>
 							{t("resume.educations.ckcc.school")}
 						</h3>
@@ -145,8 +135,7 @@ const Resume = () => {
 					<TimelineItem
 						key="004"
 						dateText={t("resume.educations.donbosco.year")}
-						dateInnerStyle={{ background: "#76bb7f" }}
-					>
+						dateInnerStyle={{ background: "#76bb7f" }}>
 						<h3 style={{ color: "#76bb7f" }}>
 							{t("resume.educations.donbosco.school")}
 						</h3>

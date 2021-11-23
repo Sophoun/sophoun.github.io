@@ -1,5 +1,5 @@
 ---
-path: "/why_i_am_writing_blog_post"
+path: "/blog/why_i_am_writing_blog_post"
 date: 2021-11-24
 title: "Why I am writing blog post"
 ---

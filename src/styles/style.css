@@ -26,6 +26,7 @@ body {
 	border-width: 1.5px;
 	font-weight: bold;
 	height: min-content;
+	width: fit-content;
 }
 
 .button:hover {

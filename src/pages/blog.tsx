@@ -14,7 +14,7 @@ const Blog = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   return (
     <Layout>
-      <div className="container">
+      <div className="flex justify-content-between">
         {Posts}
         <Footer />
       </div>
@@ -32,6 +32,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            path
           }
         }
       }

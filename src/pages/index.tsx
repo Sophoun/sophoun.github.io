@@ -9,7 +9,7 @@ const IndexPage = () => {
 		<div className="home-background">
 			<div className="container">
 				<div className="vh-100 d-flex row">
-					<Header />
+					<Header data={undefined} />
 					<div className="align-self-start">
 						<Welcome />
 					</div>
