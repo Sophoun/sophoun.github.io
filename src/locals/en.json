@@ -5,7 +5,8 @@
 	},
 	"menu": {
 		"home": "Home",
-		"resume": "Resume"
+		"resume": "Resume",
+		"blog": "Blog"
 	},
 	"footer": {
 		"contact": "Contact",

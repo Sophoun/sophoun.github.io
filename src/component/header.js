@@ -122,6 +122,9 @@ const Header = ({ data }) => {
 						<a href="/resume" className="button btn ml-2">
 							{t("menu.resume")}
 						</a>
+						<a href="/blog" className="button btn ml-2">
+							{t("menu.blog")}
+						</a>
 					</div>
 				</div>
 			</div>
