@@ -1,23 +1,17 @@
 import React from "react";
 import Welcome from "../component/welcome";
-import Header from "../component/header";
 import Footer from "../component/footer";
+import Layout from "../layout/layout";
+import Header from "../component/header";
 
 const IndexPage = () => {
 
 	return (
 		<div className="home-background">
-			<div className="container">
-				<div className="vh-100 d-flex row">
-					<Header data={undefined} />
-					<div className="align-self-start">
-						<Welcome />
-					</div>
-					<div className="col-12 align-self-end">
-						<Footer />
-					</div>
-				</div>
-			</div>
+			<Layout
+				center={true}>
+				<Welcome />
+			</Layout>
 		</div>
 	);
 };

@@ -1,8 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PostLink from "../component/post_link"
-import Header from "../component/header"
-import Footer from "../component/footer"
 import Layout from "../layout/layout"
 const Blog = ({
   data: {
@@ -13,10 +11,10 @@ const Blog = ({
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   return (
-    <Layout>
-      <div className="flex justify-content-between">
+    <Layout
+      center={false}>
+      <div>
         {Posts}
-        <Footer />
       </div>
     </Layout>
   )

@@ -9,7 +9,9 @@ const Resume = () => {
 	const { t } = useTranslation();
 
 	return (
-		<Layout>
+		<Layout
+			center={false}
+		>
 			<div
 				style={{ marginTop: "50px" }}
 				className="d-flex justify-content-between">
@@ -20,7 +22,7 @@ const Resume = () => {
 				<a
 					href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
 					target="blank"
-					className="button btn me-0">
+					className="button btn">
 					{t("resume.download")}
 				</a>
 			</div>
@@ -142,7 +144,6 @@ const Resume = () => {
 						<p>{t("resume.educations.donbosco.certification")}</p>
 					</TimelineItem>
 				</Timeline>
-				<Footer />
 			</div>
 		</Layout>
 	);

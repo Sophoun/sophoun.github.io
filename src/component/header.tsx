@@ -1,13 +1,8 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
-import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import cookie from "react-cookies";
 import { utils } from "../utils/utils";
-
-const menuStyle = {
-	paddingTop: "24px",
-};
 
 const Header = ({ data }) => {
 	const { t, i18n } = useTranslation();
@@ -57,64 +52,62 @@ const Header = ({ data }) => {
 	};
 
 	return (
-		<div id="menu" style={menuStyle}>
-			<div className="d-flex justify-content-between">
-				<a href="/">
-					<StaticImage
-						src="../images/Logo@2x.png"
-						className="flex-start"
-						alt="Logo"
-						placeholder="blurred"
-					/>
-				</a>
-				<div className="row flex justify-content-end pe-2">
-					<div className="dropdown" style={{ width: "150px" }}>
+		<div className="row justify-content-between pt-md-3">
+			<a className="col-md-6" href="/">
+				<StaticImage
+					src="../images/Logo@2x.png"
+					className="flex-start"
+					alt="Logo"
+					placeholder="blurred"
+				/>
+			</a>
+			<div className="col-md-6 row justify-content-end">
+				<div className="dropdown col-md-3 justify-content-end" style={{ width: "150px" }}>
+					<button
+						className="btn button dropdown-toggle d-flex align-content-center"
+						type="button"
+						id="dropdownMenuButton"
+						data-bs-toggle="dropdown"
+						aria-haspopup="true"
+						aria-expanded="false">
+						{languageMenu()}
+					</button>
+					<div
+						className="dropdown-menu"
+						aria-labelledby="dropdownMenuButton">
 						<button
-							className="btn button dropdown-toggle d-flex align-content-center"
-							type="button"
-							id="dropdownMenuButton"
-							data-bs-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false">
-							{languageMenu()}
+							className="dropdown-item button d-flex align-content-center"
+							onClick={() => changeLanguage("en")}>
+							<StaticImage
+								className="ms-2 me-2"
+								alt="english"
+								src="../images/icons/united-kingdom.png"
+							/>
+							{t("language.english")}
 						</button>
-						<div
-							className="dropdown-menu"
-							aria-labelledby="dropdownMenuButton">
-							<button
-								className="dropdown-item button d-flex align-content-center"
-								onClick={() => changeLanguage("en")}>
-								<StaticImage
-									className="ms-2 me-2"
-									alt="english"
-									src="../images/icons/united-kingdom.png"
-								/>
-								{t("language.english")}
-							</button>
-							<button
-								className="dropdown-item button d-flex align-content-center"
-								onClick={() => changeLanguage("km")}>
-								<StaticImage
-									className="ms-2 me-2"
-									alt="khmer"
-									src="../images/icons/cambodia.png"
+						<button
+							className="dropdown-item button d-flex align-content-center"
+							onClick={() => changeLanguage("km")}>
+							<StaticImage
+								className="ms-2 me-2"
+								alt="khmer"
+								src="../images/icons/cambodia.png"
 
-								/>
-								{t("language.khmer")}
-							</button>
-						</div>
+							/>
+							{t("language.khmer")}
+						</button>
 					</div>
-					<a href="/" className="button btn">
-						{t("menu.home")}
-					</a>
-					{/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
-					<a href="/resume" className="button btn ms-2">
-						{t("menu.resume")}
-					</a>
-					<a href="/blog" className="button btn ms-2">
-						{t("menu.blog")}
-					</a>
 				</div>
+				<a href="/" className="button btn col-md-3">
+					{t("menu.home")}
+				</a>
+				{/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
+				<a href="/resume" className="button btn col-md-3 ms-2">
+					{t("menu.resume")}
+				</a>
+				<a href="/blog" className="button btn col-md-3 ms-2">
+					{t("menu.blog")}
+				</a>
 			</div>
 		</div>
 	);
