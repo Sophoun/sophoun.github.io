@@ -12,23 +12,22 @@ const Resume = () => {
 		<Layout
 			center={false}
 		>
-			<div
-				style={{ marginTop: "50px" }}
-				className="d-flex justify-content-between">
-				<div>
+			<div className="row mt-3">
+				<div className="col-6">
 					<h1 className="content-title">{t("resume.title")}</h1>
 					<hr className="break-line" />
 				</div>
-				<a
-					href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
-					target="blank"
-					className="button btn">
-					{t("resume.download")}
-				</a>
+				<div className="col-6 d-flex justify-content-end">
+					<a className="button btn"
+						href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
+						target="blank">
+						{t("resume.download")}
+					</a>
+				</div>
 			</div>
-			<div style={{ marginTop: "50px" }}>
-				<div className="d-flex justify-content-center">
-					<div>
+			<div>
+				<div className="row">
+					<div className="col-md-3 col-12 d-flex justify-content-center d-md-flex justify-content-sm-start">
 						<StaticImage
 							className="profile-image"
 							src="../images/profile_circle.jpg"
@@ -36,13 +35,13 @@ const Resume = () => {
 							placeholder="blurred"
 						/>
 					</div>
-					<div className="ms-5">
-						<h1 className="content-title">{t("resume.name")}</h1>
-						<p className="paragraph3">{t("resume.slang")}</p>
+					<div className="col-md-9 col-12 mt-4 mt-sm-0 d-flex flex-column">
+						<h1 className="content-title text-sm-start text-center">{t("resume.name")}</h1>
+						<p className="paragraph3 mt-2 mt-sm-0">{t("resume.slang")}</p>
 					</div>
 				</div>
 			</div>
-			<div style={{ marginTop: "50px" }}>
+			<div className="pt-2 pt-sm-5">
 				<h1>{t("resume.personal_info_title")}</h1>
 				<hr className="break-line" />
 				<p>{t("resume.personal_info_block")}</p>

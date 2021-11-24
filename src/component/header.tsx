@@ -20,51 +20,50 @@ const Header = ({ data }) => {
 		utils.changeBodyFont(lang);
 	};
 
-	const languageMenu = () => {
-		var language = cookie.load("language") ?? "en";
-		if (language === "en") {
-			return (
-				<div className="d-flex align-content-center">
-					<StaticImage
-						alt={language}
-						src="../images/icons/united-kingdom.png"
-						style={{
-							marginRight: "6px",
-						}}
-					/>
-					{t("language.english")}
-				</div>
-			);
-		} else if (language === "km") {
-			return (
-				<div className="d-flex align-content-center">
-					<StaticImage
-						alt={language}
-						src="../images/icons/cambodia.png"
-						style={{
-							marginRight: "6px",
-						}}
-					/>
-					{t("language.khmer")}
-				</div>
-			);
-		}
-	};
+	// const languageMenu = () => {
+	// 	var language = cookie.load("language") ?? "en";
+	// 	if (language === "en") {
+	// 		return (
+	// 			<div className="">
+	// 				<StaticImage
+	// 					alt={language}
+	// 					src="../images/icons/united-kingdom.png"
+	// 					style={{
+	// 						marginRight: "6px",
+	// 					}}
+	// 				/>
+	// 				{t("language.english")}
+	// 			</div>
+	// 		);
+	// 	} else if (language === "km") {
+	// 		return (
+	// 			<div className="">
+	// 				<StaticImage
+	// 					alt={language}
+	// 					src="../images/icons/cambodia.png"
+	// 					style={{
+	// 						marginRight: "6px",
+	// 					}}
+	// 				/>
+	// 				{t("language.khmer")}
+	// 			</div>
+	// 		);
+	// 	}
+	// };
 
 	return (
 		<div className="row justify-content-between pt-md-3 pt-3">
-			<a className="col-md-6 d-none d-md-block" href="/">
+			<a className="col-6" href="/">
 				<StaticImage
 					src="../images/Logo@2x.png"
-					className="flex-start"
 					alt="Logo"
 					placeholder="blurred"
 				/>
 			</a>
-			<div className="col-md-6 col-12 row justify-content-md-end justify-content-between">
-				<div className="dropdown col-md-3 justify-content-end" style={{ width: "150px" }}>
+			<div className="col-6 justify-content-md-end justify-content-start d-sm-flex d-none d-sm-block">
+				{/* <div className="dropdown col-md-3 justify-content-end">
 					<button
-						className="btn button dropdown-toggle d-flex align-content-center"
+						className="btn button dropdown-toggle"
 						type="button"
 						id="dropdownMenuButton"
 						data-bs-toggle="dropdown"
@@ -97,17 +96,20 @@ const Header = ({ data }) => {
 							{t("language.khmer")}
 						</button>
 					</div>
-				</div>
-				<a href="/" className="button btn col-md-3">
+				</div> */}
+				<a href="/" className="button btn col-md-4">
 					{t("menu.home")}
 				</a>
 				{/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
-				<a href="/resume" className="button btn col-md-3 ms-2">
+				<a href="/resume" className="button btn col-md-4 ms-2">
 					{t("menu.resume")}
 				</a>
-				<a href="/blog" className="button btn col-md-3 ms-2">
+				<a href="/blog" className="button btn col-md-4 ms-2">
 					{t("menu.blog")}
 				</a>
+			</div>
+			<div className="col-6 d-sm-none d-sm-block d-flex justify-content-end">
+				<button className="btn button">MORE</button>
 			</div>
 		</div>
 	);

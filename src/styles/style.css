@@ -44,9 +44,15 @@ body {
 }
 
 .content-title {
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: bold;
 }
+
+@media (max-width: 576px) {
+	.content-title {
+	  font-size: 2em;
+	}
+  }
 
 .paragraph1 {
 	font-size: 3em;
@@ -60,6 +66,12 @@ body {
 	font-size: 1.6em;
 }
 
+@media (max-width: 576px) {
+	.paragraph3 {
+	  font-size: 1.2em;
+	  text-justify: inter-word;
+	}
+  }
 
 .hello-bold {
 	font-size: 5em;
@@ -99,3 +111,15 @@ body {
 	right: -5px !important;
 }
 
+.post-content {
+	text-justify: newspaper;
+	width: 70%;
+	font-size: 1.3em;
+}
+
+@media (max-width: 576px) {
+	.post-content {
+	  font-size: 1.1em;
+	  width: 100%;
+	}
+  }
