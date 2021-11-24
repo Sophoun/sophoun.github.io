@@ -9,6 +9,7 @@ const Blog = ({
   },
 }) => {
   const { t } = useTranslation();
+
   const Posts: [] = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
@@ -21,7 +22,7 @@ const Blog = ({
           <hr className="break-line" />
         </div>
       </div>
-      <div>
+      <div className="row col-sm-8 offset-sm-2 col-12">
         {Posts}
       </div>
     </Layout>
@@ -37,8 +38,14 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            title
             path
+            title
+            author
+            featureImage {
+              childImageSharp {
+                gatsbyImageData(width: 200)
+              }
+            }
           }
         }
       }

@@ -1,10 +1,9 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../layout/layout";
-import { useTranslation } from "react-i18next";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Page({ data }) {
-	const t = useTranslation();
 	const { markdownRemark: post } = data;
 	return (
 		<Layout
@@ -21,7 +20,11 @@ export default function Page({ data }) {
 					<hr className="break-line" />
 				</div>
 			</div>
+			<div className="d-flex justify-content-center pt-2 pb-4">
+				<GatsbyImage image={getImage(post.frontmatter.featureImage)} alt="Blog" />
+			</div>
 			<div className="d-flex justify-content-center pt-sm-3">
+
 				<div
 					className="post-content"
 					dangerouslySetInnerHTML={{ __html: post.html }}
@@ -40,6 +43,11 @@ export const pageQuery = graphql`
 				path
 				title
 				author
+				featureImage {
+					childImageSharp {
+					  gatsbyImageData(width: 800)
+					}
+				  }
 			}
 		}
 	}
