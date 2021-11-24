@@ -104,13 +104,24 @@ const Header = ({ data }) => {
 				<a href="/resume" className="button btn col-md-4 ms-2">
 					{t("menu.resume")}
 				</a>
-				<a href="/blog" className="button btn col-md-4 ms-2">
+				{/* <a href="/blog" className="button btn col-md-4 ms-2">
 					{t("menu.blog")}
-				</a>
+				</a> */}
 			</div>
-			<div className="col-6 d-sm-none d-sm-block d-flex justify-content-end">
-				<button className="btn button">MORE</button>
+			<div className="col-6 d-sm-none d-sm-block d-flex justify-content-end dropdown">
+				{/* <button className="btn button" id="dropdownMenuLink">MORE</button> */}
+				<div className="dropdown">
+					<a className="btn button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+						MENU
+					</a>
+
+					<ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a className="dropdown-item btn button" href="/resume">{t("menu.resume")}</a></li>
+						{/* <li><a className="dropdown-item btn button" href="/blog">{t("menu.blog")}</a></li> */}
+					</ul>
+				</div>
 			</div>
+
 		</div>
 	);
 };
