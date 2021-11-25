@@ -8,8 +8,8 @@ export default function Page({ data }) {
 	return (
 		<Layout
 			center={false}>
-			<div className="row mt-3">
-				<div className="col-12">
+			<div className="mt-3 post d-flex justify-content-sm-center">
+				<div>
 					<h1 className="content-title">{post.frontmatter.title}</h1>
 					<hr className="break-line" />
 					<p>
@@ -17,6 +17,7 @@ export default function Page({ data }) {
 						<br />
 						Author: {post.frontmatter.author}
 					</p>
+					<p>{post.fields.readingTime.text}</p>
 					<hr className="break-line" />
 				</div>
 			</div>
@@ -49,6 +50,11 @@ export const pageQuery = graphql`
 					}
 				  }
 			}
+			fields {
+				readingTime {
+				  text
+				}
+			  }
 		}
 	}
 `;

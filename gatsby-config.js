@@ -77,5 +77,13 @@ module.exports = {
 				allExtensions: true,
 			},
 		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					`gatsby-remark-reading-time`,
+				],
+			},
+		},
 	],
 };

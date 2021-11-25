@@ -111,13 +111,20 @@ body {
 	right: -5px !important;
 }
 
-.post-content {
+.post  {
 	text-justify: newspaper;
 	width: 70%;
+}
+
+.post-content {
 	font-size: 1.3em;
+	width: 70%;
 }
 
 @media (max-width: 576px) {
+	.post {
+		width: 100%;
+	}
 	.post-content {
 	  font-size: 1.1em;
 	  width: 100%;
