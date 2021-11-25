@@ -27,7 +27,7 @@ const Resume = () => {
 			</div>
 			<div>
 				<div className="row">
-					<div className="col-md-3 col-12 d-flex justify-content-center d-md-flex justify-content-sm-start">
+					<div className="col-lg-3 col-sm-5 col-12 d-flex justify-content-center d-md-flex justify-content-sm-start">
 						<StaticImage
 							className="profile-image"
 							src="../images/profile_circle.jpg"
@@ -35,7 +35,7 @@ const Resume = () => {
 							placeholder="blurred"
 						/>
 					</div>
-					<div className="col-md-9 col-12 mt-4 mt-sm-0 d-flex flex-column">
+					<div className="col-lg-9 col-sm-7 col-12 mt-4 mt-sm-0 d-flex flex-column">
 						<h1 className="content-title text-sm-start text-center">{t("resume.name")}</h1>
 						<p className="paragraph3 mt-2 mt-sm-0">{t("resume.slang")}</p>
 					</div>
