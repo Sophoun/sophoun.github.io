@@ -5,13 +5,8 @@ const PostLink = ({ post }) => (
     <Link className="text-decoration-none text-black shadow border border-1 m-2 w-100 h-100"
         to={post.frontmatter.path}>
         <div className="p-3 row">
-
-            <GatsbyImage
-                className="col-sm-2 col-5"
-                image={getImage(post.frontmatter.featureImage)} alt="" />
-
-            <div className="col-sm-10 col-7 ps-4">
-                <h3 className="">{post.frontmatter.title}</h3>
+            <div className="col-sm-8 col-7 ps-4">
+                <h3 className="post-title">{post.frontmatter.title}</h3>
                 <p>
                     Date: {post.frontmatter.date}
                     <br />
@@ -19,7 +14,10 @@ const PostLink = ({ post }) => (
                 </p>
                 <p>{post.fields.readingTime.text}</p>
             </div>
+            <GatsbyImage
+                className="col-sm-4 col-5"
+                image={getImage(post.frontmatter.featureImage)} alt="" />
         </div>
-    </Link>
+    </Link >
 )
 export default PostLink

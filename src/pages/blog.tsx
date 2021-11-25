@@ -3,6 +3,9 @@ import { graphql } from "gatsby"
 import PostLink from "../component/post_link"
 import Layout from "../layout/layout"
 import { useTranslation } from "react-i18next"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
+
 const Blog = ({
   data: {
     allMarkdownRemark: { edges },
@@ -43,7 +46,7 @@ export const pageQuery = graphql`
             author
             featureImage {
               childImageSharp {
-                gatsbyImageData(width: 200)
+                gatsbyImageData(width: 300)
               }
             }
           }
