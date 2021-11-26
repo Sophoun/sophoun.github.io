@@ -2,7 +2,6 @@ import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import Layout from "../layout/layout";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
-import Footer from "../component/footer";
 import { useTranslation } from "react-i18next";
 
 const Resume = () => {
