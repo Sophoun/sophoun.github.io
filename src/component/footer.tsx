@@ -6,11 +6,11 @@ const Footer = () => {
 
 	return (
 		<footer >
-			<h4>{t("footer.contact")}</h4>
+			<h4>{t("labels.contact")}</h4>
 			<hr className="break-line" />
 			<div className="d-md-flex justify-content-between">
-				<p>{t("footer.email")}: {t("footer.email_name")}</p>
-				<p>{t("footer.copy_right")}</p>
+				<p>{t("labels.email")}: {t("labels.email_name")}</p>
+				<p>{t("labels.copy_right")}</p>
 			</div>
 		</footer>
 	);

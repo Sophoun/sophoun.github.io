@@ -1,0 +1,54 @@
+{
+    "title": "Resume",
+    "download": "Download",
+    "name": "Sophoun NHEUM",
+    "slang": "Professional developer with 7 years experience that already solves many problem for customers over the world.",
+    "personal_info_title": "Personal Information",
+    "personal_info_block": "Professional developer, experienced in software industry that help start-up and organization build good quality products. My greatest strength is technical awareness, which enables me to development, maintenance application and also manage the development team.",
+    "experiences_title": "Experiences",
+    "experiences": {
+        "prince_bank": {
+            "year": "08/2020 - Present",
+            "title": "Assistant Manager, Prince Bank",
+            "sub_title": "Android Development",
+            "task1": "Manage CI/CD, Code review",
+            "task2": "Lead a development cross-platform application using flutter"
+        },
+        "beniten": {
+            "year": "04/2018 – 08/2020",
+            "title": "Android Developer, Beniten",
+            "task1": "Develop utility tools for other developer uses",
+            "task2": "Independent developer that handles 3 or 4 projects at the same time"
+        },
+        "cam_wp": {
+            "year": "06/2017 – 03/2018",
+            "title": "Web Developer, CamWP Dev",
+            "sub_title": "WordPress Developer",
+            "task1": "Develop and maintenance WordPress website for clients"
+        },
+        "blue": {
+            "year": "08/2013 – 06/2017",
+            "title": "IT Support, Blue Technology",
+            "task1": "Provided onside support to customer who had trouble with their POS system and also redesign their report using Crystal Report",
+            "task2": "Training POS System to new customer"
+        }
+    },
+    "educations_title": "Educations",
+    "educations": {
+        "rupp": {
+            "year": "08/2014 – 03-2018",
+            "school": "Royal University of Phnom Penh, RUPP",
+            "certification": "Bachelor of Science in Computer Science"
+        },
+        "ckcc": {
+            "year": "06/2017 – 12/2017",
+            "school": "Cambodia Korean Cooperation Center, CKCC",
+            "certification": "Certified Associate Android Development"
+        },
+        "donbosco": {
+            "year": "08/2011 – 08/2013",
+            "school": "Don Bosco Technical School, DBTS",
+            "certification": "Certified associate web development"
+        }
+    }
+}
