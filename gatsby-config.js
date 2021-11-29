@@ -4,7 +4,7 @@ module.exports = {
 		author: `Sophoun`,
 		titleTemplate: "%s · The Programmer",
 		description: "Flutter & Android developer also confident doing backend development.",
-		url: "https://sophoun.com",
+		siteUrl: "https://sophoun.com",
 		image: "/Logo@2x.png", // Path to the image placed in the 'static' folder, in the project's root directory.
 		twitterUsername: "@sophoun__",
 	},
