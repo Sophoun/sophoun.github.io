@@ -9,7 +9,7 @@ const Welcome = () => {
 			<div className="col-md-12">
 				<p className="paragraph1">{t("home.hello")}</p>
 				<p className="hello-bold">{t("home.im_sophoun")}</p>
-				<p className="paragraph2">{t("home.me_info")}</p>
+				<p className="paragraph2 col-lg-7 col-md-9 col-12">{t("home.me_info")}</p>
 				<div className="d-flex justify-content-start">
 					<a
 						className="button btn"
