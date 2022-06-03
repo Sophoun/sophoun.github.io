@@ -9,33 +9,33 @@
     "experiences": {
         "prince_bank_manager": {
             "year": "05/2022 - Present",
-            "title": "Manager, Prince Bank",
+            "title": "Manager@Prince Bank",
             "sub_title": "Android Development",
             "task1": "Research new technology to fit the bank, Manage CI/CD, Code review",
             "task2": "Lead flutter development team"
         },
         "prince_bank": {
             "year": "08/2020 - 04/2022",
-            "title": "Assistant Manager, Prince Bank",
+            "title": "Assistant Manager@Prince Bank",
             "sub_title": "Android Development",
             "task1": "Manage CI/CD, Code review",
             "task2": "Lead flutter development team"
         },
         "beniten": {
             "year": "04/2018 – 08/2020",
-            "title": "Android Developer, Beniten",
+            "title": "Android Developer@Beniten",
             "task1": "Develop utility tools for other developer uses",
             "task2": "Independent developer that handles 3 or 4 projects at the same time"
         },
         "cam_wp": {
             "year": "06/2017 – 03/2018",
-            "title": "Web Developer, CamWP Dev",
+            "title": "Web Developer@CamWP Dev",
             "sub_title": "WordPress Developer",
             "task1": "Develop and maintenance WordPress website for clients"
         },
         "blue": {
             "year": "08/2013 – 06/2017",
-            "title": "IT Support, Blue Technology",
+            "title": "IT Support@Blue Technology",
             "task1": "Provided onside support to customer who had trouble with their POS system and also redesign their report using Crystal Report",
             "task2": "Training POS System to new customer"
         }
