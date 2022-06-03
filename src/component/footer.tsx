@@ -10,7 +10,7 @@ const Footer = () => {
 			<hr className="break-line" />
 			<div className="d-md-flex justify-content-between">
 				<p>{t("labels.email")}: {t("labels.email_name")}</p>
-				<p>{t("labels.copy_right")}</p>
+				<p>{t("labels.copy_right", { year: new Date().getFullYear() })}</p>
 			</div>
 		</footer>
 	);

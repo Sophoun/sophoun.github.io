@@ -7,5 +7,5 @@
     "contact": "Contact",
     "email": "Email",
     "email_name": "sophoun.unix@gmail.com",
-    "copy_right": "Copyright: sophoun@2022"
+    "copy_right": "Copyright: sophoun@{{year}}"
 }

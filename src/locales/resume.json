@@ -2,7 +2,7 @@
     "title": "Resume",
     "download": "Download",
     "name": "Sophoun NHEUM",
-    "slang": "Professional developer with 7 years experience that already solves many problem for customers over the world.",
+    "slang": "Professional developer with {{experiences_year}} years experience that already solves many problem for customers over the world.",
     "personal_info_title": "Personal Information",
     "personal_info_block": "Professional developer, experienced in software industry that help start-up and organization build good quality products. My greatest strength is technical awareness, which enables me to development, maintenance application and also manage the development team.",
     "experiences_title": "Experiences",

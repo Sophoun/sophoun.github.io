@@ -36,7 +36,7 @@ const Resume = () => {
 					</div>
 					<div className="col-lg-9 col-sm-7 col-12 mt-4 mt-sm-0 d-flex flex-column">
 						<h1 className="content-title text-sm-start text-center">{t("resume.name")}</h1>
-						<p className="paragraph3 mt-2 mt-sm-0">{t("resume.slang")}</p>
+						<p className="paragraph3 mt-2 mt-sm-0">{t("resume.slang", { experiences_year: (new Date().getFullYear() - 2013) })}</p>
 					</div>
 				</div>
 			</div>
