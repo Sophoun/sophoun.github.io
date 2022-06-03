@@ -69,8 +69,7 @@ const Resume = () => {
 					<TimelineItem
 						key="004"
 						dateText={t("resume.experiences.prince_bank.year")}
-						dateInnerStyle={{ background: "#e86971", color: "white" }}
-						style={{ color: "#e86971" }}>
+						dateInnerStyle={{ background: "#e86971", color: "white" }}>
 						<h3 style={{ color: "#e86971" }}>
 							{t("resume.experiences.prince_bank.title")}
 						</h3>
