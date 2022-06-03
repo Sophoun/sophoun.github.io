@@ -49,11 +49,27 @@ const Resume = () => {
 				<h1>{t("resume.experiences_title")}</h1>
 				<hr className="break-line" />
 			</div>
+
 			<div>
 				<Timeline lineColor={"#ddd"} className="timeline-custom">
 					<TimelineItem
-						key="001"
+						key="005"
+						dateText={t("resume.experiences.prince_bank_manager.year")}
+						dateInnerStyle={{ background: "#FFAC38", color: "white" }}
+						style={{ color: "#FFAC38" }}>
+						<h3 style={{ color: "#FFAC38" }}>
+							{t("resume.experiences.prince_bank_manager.title")}
+						</h3>
+						<h4>{t("resume.experiences.prince_bank_manager.sub_title")}</h4>
+						<ul>
+							<li>{t("resume.experiences.prince_bank_manager.task1")}</li>
+							<li>{t("resume.experiences.prince_bank_manager.task2")}</li>
+						</ul>
+					</TimelineItem>
+					<TimelineItem
+						key="004"
 						dateText={t("resume.experiences.prince_bank.year")}
+						dateInnerStyle={{ background: "#e86971", color: "white" }}
 						style={{ color: "#e86971" }}>
 						<h3 style={{ color: "#e86971" }}>
 							{t("resume.experiences.prince_bank.title")}
@@ -65,7 +81,7 @@ const Resume = () => {
 						</ul>
 					</TimelineItem>
 					<TimelineItem
-						key="002"
+						key="003"
 						dateText={t("resume.experiences.beniten.year")}
 						dateInnerStyle={{ background: "#61b8ff", color: "#fff" }}>
 						<h3 style={{ color: "#61b8ff" }}>
@@ -79,7 +95,7 @@ const Resume = () => {
 						</p>
 					</TimelineItem>
 					<TimelineItem
-						key="004"
+						key="002"
 						dateText={t("resume.experiences.cam_wp.year")}
 						dateInnerStyle={{ background: "#76bb7f" }}>
 						<h3 style={{ color: "#76bb7f" }}>
@@ -93,7 +109,7 @@ const Resume = () => {
 						</p>
 					</TimelineItem>
 					<TimelineItem
-						key="005"
+						key="001"
 						dateText={t("resume.experiences.blue.year")}
 						dateInnerStyle={{ background: "#bb007f" }}>
 						<h3 style={{ color: "#bb007f" }}>

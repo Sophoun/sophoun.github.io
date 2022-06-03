@@ -7,12 +7,19 @@
     "personal_info_block": "Professional developer, experienced in software industry that help start-up and organization build good quality products. My greatest strength is technical awareness, which enables me to development, maintenance application and also manage the development team.",
     "experiences_title": "Experiences",
     "experiences": {
+        "prince_bank_manager": {
+            "year": "05/2022 - Present",
+            "title": "Manager, Prince Bank",
+            "sub_title": "Android Development",
+            "task1": "Research new technology to fit the bank, Manage CI/CD, Code review",
+            "task2": "Lead flutter development team"
+        },
         "prince_bank": {
-            "year": "08/2020 - Present",
+            "year": "08/2020 - 04/2022",
             "title": "Assistant Manager, Prince Bank",
             "sub_title": "Android Development",
             "task1": "Manage CI/CD, Code review",
-            "task2": "Lead a development cross-platform application using flutter"
+            "task2": "Lead flutter development team"
         },
         "beniten": {
             "year": "04/2018 – 08/2020",
