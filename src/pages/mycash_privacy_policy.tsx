@@ -1,6 +1,6 @@
 import React from "react";
 
-const EasyPlayerPrivacyPolicy = () => {
+const myCashPrivacyPolicy = () => {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: page }}>
@@ -10,7 +10,7 @@ const EasyPlayerPrivacyPolicy = () => {
   );
 }
 
-export default EasyPlayerPrivacyPolicy;
+export default myCashPrivacyPolicy;
 
 const page = `
 <!DOCTYPE html>
@@ -23,8 +23,8 @@ const page = `
     </head>
     <body>
     <strong>Privacy Policy</strong> <p>
-                  Sophoun Nheum built the Easy Player app as
-                  an Ad Supported app. This SERVICE is provided by
+                  Sophoun Nheum built the myCash app as
+                  a Free app. This SERVICE is provided by
                   Sophoun Nheum at no cost and is intended for use as
                   is.
                 </p> <p>
@@ -40,7 +40,7 @@ const page = `
                 </p> <p>
                   The terms used in this Privacy Policy have the same meanings
                   as in our Terms and Conditions, which are accessible at
-                  Easy Player unless otherwise defined in this Privacy Policy.
+                  myCash unless otherwise defined in this Privacy Policy.
                 </p> <p><strong>Information Collection and Use</strong></p> <p>
                   For a better experience, while using our Service, I
                   may require you to provide us with certain personally
@@ -52,7 +52,7 @@ const page = `
                   </p> <p>
                     Link to the privacy policy of third-party service providers used
                     by the app
-                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
+                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><!----><li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li><li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
                   I want to inform you that whenever you
                   use my Service, in a case of an error in the app
                   I collect data and information (through third-party
