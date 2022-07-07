@@ -20,7 +20,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = isSupported().then((result) => result ? getAnalytics(app) : undefined)
-const appCheck = initializeAppCheck(app, { provider: new ReCaptchaV3Provider("6LfV8tEgAAAAADL7Cguk4DF6iqLc8oH_c9aH4FRc") })
+const appCheck = isSupported().then((result) => result ? initializeAppCheck(app, { provider: new ReCaptchaV3Provider("6LfV8tEgAAAAADL7Cguk4DF6iqLc8oH_c9aH4FRc") }) : undefined)
 
 interface AnalyticsCallback {
     (analytic: Analytics): void
