@@ -19,10 +19,18 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-var analytics: Analytics
-if (typeof window != undefined) {
-    analytics = getAnalytics(app)
-}
+const analytics = isSupported().then((result) => result ? getAnalytics(app) : undefined)
 const appCheck = initializeAppCheck(app, { provider: new ReCaptchaV3Provider("6LfV8tEgAAAAADL7Cguk4DF6iqLc8oH_c9aH4FRc") })
 
-export { analytics, appCheck }
+interface AnalyticsCallback {
+    (analytic: Analytics): void
+}
+const analytic = (callback: AnalyticsCallback) => {
+    analytics.then((a) => {
+        callback(a)
+    }).catch((r) => {
+        throw r
+    })
+}
+
+export { analytics, analytic, appCheck }

@@ -4,12 +4,14 @@ import firebase from "gatsby-plugin-firebase";
 import React, { useEffect } from "react";
 import Welcome from "../component/welcome";
 import Layout from "../layout/layout";
-import { analytics } from "../utils/firebase";
+import { analytic, analytics } from "../utils/firebase";
 
 const IndexPage = () => {
 
 	useEffect(() => {
-		logEvent(analytics, "Success calling from development.")
+		analytic((a) => {
+			logEvent(a, "Success calling from development.")
+		})
 	}, []);
 
 	return (
