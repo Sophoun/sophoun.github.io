@@ -27,6 +27,9 @@ interface AnalyticsCallback {
 }
 const analytic = (callback: AnalyticsCallback) => {
     analytics.then((a) => {
+        if (a == undefined) {
+            throw "Not support analytics";
+        }
         callback(a)
     }).catch((r) => {
         throw r
