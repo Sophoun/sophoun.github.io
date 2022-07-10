@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../component/footer";
-import Header from "../component/header";
+import Footer from "../components/footer";
+import Header from "../components/header";
 
 interface LayoutProps {
 	center: boolean,

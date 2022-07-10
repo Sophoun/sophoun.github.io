@@ -1,6 +1,6 @@
 
 import React, { useEffect } from "react";
-import Welcome from "../component/welcome";
+import Welcome from "../components/welcome";
 import Layout from "../layout/layout";
 import app from "gatsby-plugin-firebase-v9.0"
 import { getAnalytics, logEvent } from "firebase/analytics"

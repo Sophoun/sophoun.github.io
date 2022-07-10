@@ -18,6 +18,6 @@ const PostLink = ({ post }) => (
                 className="col-sm-4 col-5"
                 image={getImage(post.frontmatter.featureImage)} alt="" />
         </div>
-    </Link >
+    </Link>
 )
 export default PostLink

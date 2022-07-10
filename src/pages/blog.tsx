@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import { graphql } from "gatsby"
-import PostLink from "../component/post_link"
+import PostLink from "../components/post_link"
 import Layout from "../layout/layout"
 import { useTranslation } from "react-i18next"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
