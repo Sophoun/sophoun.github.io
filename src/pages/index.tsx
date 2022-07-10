@@ -1,17 +1,17 @@
-import { getAnalytics, logEvent } from "firebase/analytics";
-import { getApp } from "firebase/app";
-import firebase from "gatsby-plugin-firebase";
+
 import React, { useEffect } from "react";
 import Welcome from "../component/welcome";
 import Layout from "../layout/layout";
-import { analytic, analytics } from "../utils/firebase";
+import app from "gatsby-plugin-firebase-v9.0"
+import { getAnalytics, logEvent } from "firebase/analytics"
 
 const IndexPage = () => {
 
+	const analytics = getAnalytics(app)
+
 	useEffect(() => {
-		analytic((a) => {
-			logEvent(a, "Success calling from development.")
-		})
+		logEvent(analytics, "Open home page.");
+
 	}, []);
 
 	return (

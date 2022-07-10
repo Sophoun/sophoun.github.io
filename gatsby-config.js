@@ -71,6 +71,21 @@ module.exports = {
 				theme: "blackboard",
 				lineNumbers: true,
 			},
+		},
+		{
+			resolve: "gatsby-plugin-firebase-v9.0",
+			options: {
+				credentials: {
+					apiKey: "AIzaSyDzveiaBNmYa8n1pGYZCFirWip1gdpKwok",
+					authDomain: "sophoun-project.firebaseapp.com",
+					projectId: "sophoun-project",
+					storageBucket: "sophoun-project.appspot.com",
+					messagingSenderId: "457109583638",
+					appId: "1:457109583638:web:0fd680d5a31a6c728c0237",
+					measurementId: "G-9LWDE07TL5"
+				}
+			}
+
 		}
 	],
 };
