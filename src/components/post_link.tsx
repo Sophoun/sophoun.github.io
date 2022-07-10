@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const PostLink = ({ post }) => (
     <Link className="text-decoration-none text-black shadow border border-1 m-2 w-100 h-100"
         to={post.frontmatter.path}>
@@ -14,9 +13,9 @@ const PostLink = ({ post }) => (
                 </p>
                 <p>{post.fields.readingTime.text}</p>
             </div>
-            <GatsbyImage
+            {/* <GatsbyImage
                 className="col-sm-4 col-5"
-                image={getImage(post.frontmatter.featureImage)} alt="" />
+                image={getImage(post.frontmatter.featureImage)} alt="" /> */}
         </div>
     </Link>
 )

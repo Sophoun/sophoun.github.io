@@ -1,13 +1,12 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../layout/layout"
-import { getAnalytics, logEvent } from "firebase/analytics"
-import app from "gatsby-plugin-firebase-v9.0"
+import { logEvent } from "firebase/analytics"
+import { useAnalytics } from "../utils/firebase"
 
 // markup
 const NotFoundPage = () => {
-  const analytics = getAnalytics(app)
-  React.useEffect(() => logEvent(analytics, "Open 404 page."), []);
+  useAnalytics((analytics) => logEvent(analytics, "Open 404 page."))
   return (
     <Layout
       center={true}>

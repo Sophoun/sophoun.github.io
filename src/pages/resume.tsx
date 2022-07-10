@@ -1,14 +1,13 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React, { useEffect } from "react";
+import React from "react";
 import Layout from "../layout/layout";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import { useTranslation } from "react-i18next";
-import { getAnalytics, logEvent } from "firebase/analytics";
-import app from "gatsby-plugin-firebase-v9.0";
+import { logEvent } from "firebase/analytics";
+import { useAnalytics } from "../utils/firebase";
 
 const Resume = () => {
-	const analytics = getAnalytics(app)
-	useEffect(() => logEvent(analytics, "Open resume page."), []);
+	useAnalytics((analytics) => logEvent(analytics, "Open resume page."))
 
 	const { t } = useTranslation();
 
@@ -25,7 +24,7 @@ const Resume = () => {
 					<a className="button btn"
 						href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
 						target="blank"
-						onClick={() => logEvent(analytics, "Click on Donwload CV")}>
+						onClick={() => useAnalytics((analytics) => logEvent(analytics, "Click on Download CV."))}>
 						{t("resume.download")}
 					</a>
 				</div>

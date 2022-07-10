@@ -1,10 +1,9 @@
-import { getAnalytics, logEvent } from "firebase/analytics";
-import app from "gatsby-plugin-firebase-v9.0";
-import React, { useEffect } from "react";
+import { logEvent } from "firebase/analytics";
+import React from "react";
+import { useAnalytics } from "../utils/firebase";
 
 const myCashPrivacyPolicy = () => {
-  const analytics = getAnalytics(app)
-  useEffect(() => logEvent(analytics, "Open myCash privacy policy page."), []);
+  useAnalytics((analytics) => logEvent(analytics, "Open myCash privacy policy page."))
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: page }}>

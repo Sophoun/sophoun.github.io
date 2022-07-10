@@ -1,13 +1,12 @@
 
-import React, { useEffect } from "react";
+import React from "react";
 import Welcome from "../components/welcome";
 import Layout from "../layout/layout";
-import app from "gatsby-plugin-firebase-v9.0"
-import { getAnalytics, logEvent } from "firebase/analytics"
+import { logEvent } from "firebase/analytics"
+import { useAnalytics } from "../utils/firebase";
 
 const IndexPage = () => {
-	const analytics = getAnalytics(app)
-	useEffect(() => logEvent(analytics, "Open home page."), []);
+	useAnalytics((analytics) => logEvent(analytics, "Open home page."))
 
 	return (
 		<div className="home-background">
