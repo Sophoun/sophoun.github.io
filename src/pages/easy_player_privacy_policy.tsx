@@ -1,6 +1,10 @@
-import React from "react";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from "gatsby-plugin-firebase-v9.0";
+import React, { useEffect } from "react";
 
 const EasyPlayerPrivacyPolicy = () => {
+  const analytics = getAnalytics(app)
+  useEffect(() => logEvent(analytics, "Open easy player privacy policy page."), []);
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: page }}>

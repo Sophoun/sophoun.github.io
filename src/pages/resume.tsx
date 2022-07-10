@@ -1,10 +1,15 @@
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../layout/layout";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import { useTranslation } from "react-i18next";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from "gatsby-plugin-firebase-v9.0";
 
 const Resume = () => {
+	const analytics = getAnalytics(app)
+	useEffect(() => logEvent(analytics, "Open resume page."), []);
+
 	const { t } = useTranslation();
 
 	return (

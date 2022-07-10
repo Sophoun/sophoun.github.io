@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 import PostLink from "../component/post_link"
 import Layout from "../layout/layout"
 import { useTranslation } from "react-i18next"
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+import { getAnalytics, logEvent } from "firebase/analytics"
+import app from "gatsby-plugin-firebase-v9.0"
 deckDeckGoHighlightElement();
 
 const Blog = ({
@@ -11,6 +13,8 @@ const Blog = ({
     allMarkdownRemark: { edges },
   },
 }) => {
+  const analytics = getAnalytics(app)
+  useEffect(() => logEvent(analytics, "Open blog page."), []);
   const { t } = useTranslation();
 
   const Posts: [] = edges
