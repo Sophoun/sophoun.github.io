@@ -24,7 +24,8 @@ const Resume = () => {
 				<div className="col-6 d-flex justify-content-end">
 					<a className="button btn"
 						href="https://docs.google.com/document/d/1H0B3roqtRtj-3o3yOK8REJ26eMPsz2kGH056bdATXyg/edit?usp=sharing"
-						target="blank">
+						target="blank"
+						onClick={() => logEvent(analytics, "Click on Donwload CV")}>
 						{t("resume.download")}
 					</a>
 				</div>

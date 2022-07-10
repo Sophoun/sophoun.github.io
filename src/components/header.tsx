@@ -3,9 +3,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import cookie from "react-cookies";
 import { utils } from "../utils/utils";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import app from "gatsby-plugin-firebase-v9.0";
 
 const Header = ({ data }) => {
 	const { t, i18n } = useTranslation();
+	const analytics = getAnalytics(app);
 
 	const changeLanguage = (lang) => {
 		var language = cookie.load("language") ?? "en";
@@ -30,11 +33,11 @@ const Header = ({ data }) => {
 				/>
 			</a>
 			<div className="col-6 justify-content-md-end justify-content-start d-sm-flex d-none d-sm-block">
-				<a href="/" className="button btn col-md-4">
+				<a href="/" className="button btn col-md-4" onClick={() => logEvent(analytics, "Click on Home menu")}>
 					{t("labels.home")}
 				</a>
 				{/* <a href="#2" className="button btn ml-2">Hire Me</a> */}
-				<a href="/resume" className="button btn col-md-4 ms-2">
+				<a href="/resume" className="button btn col-md-4 ms-2" onClick={() => logEvent(analytics, "Click on Resume menu")}>
 					{t("labels.resume")}
 				</a>
 				{/* <a href="/blog" className="button btn col-md-4 ms-2">
