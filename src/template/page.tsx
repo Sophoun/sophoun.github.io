@@ -22,7 +22,7 @@ export default function Page({ data }) {
 				</div>
 			</div>
 			<div className="d-flex justify-content-center pt-2 pb-4">
-				<GatsbyImage image={getImage(post.frontmatter.featureImage)} alt="Blog" />
+				<GatsbyImage image={getImage(post.frontmatter.featureImage)!} alt="Blog" />
 			</div>
 			<div className="d-flex justify-content-center pt-sm-3">
 
